@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,12 +25,24 @@
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rex-er-DGF">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="rzV-Yu-3NA"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="1qx-C1-5Jb"/>
+                                        </connections>
                                     </pickerView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUl-JZ-TWu">
                                         <rect key="frame" x="125" y="0.0" width="125" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="eeV-pe-2Qo"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="So0-Mi-5y2"/>
+                                        </connections>
                                     </pickerView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mqa-3k-1Qh">
                                         <rect key="frame" x="250" y="0.0" width="125" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="98J-gO-jUM"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="eqR-aP-jtJ"/>
+                                        </connections>
                                     </pickerView>
                                 </subviews>
                             </stackView>
@@ -43,6 +54,11 @@
                             <constraint firstItem="it3-Vt-koz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hCA-lV-Ey4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="districtPicker" destination="OUl-JZ-TWu" id="6DE-a6-wDd"/>
+                        <outlet property="provincePicker" destination="rex-er-DGF" id="zpu-2M-ncr"/>
+                        <outlet property="subDistrictPicker" destination="Mqa-3k-1Qh" id="R7Z-0P-TyI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
