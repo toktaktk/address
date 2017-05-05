@@ -60,23 +60,24 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
                 if districtJson != JSON.null {
                     
                     let amphoeArray = jsonObj["th"]["amphoes"].arrayValue
-                    var tmpData : Array<Any>!
+                    var tmpData : Array<Any> = []
 
                     for amphoe in amphoeArray
                     {
-                        print(amphoe)
+                        print(amphoe["changwat_pid"])
                         
-//                        if amphoe["changwat_pid"].stringValue == "10" {
-//                            
-//                            tmpData.append(amphoe)
-//                            
-//                        }
+                        if (amphoe["changwat_pid"].stringValue == "10")
+                        {
+                            
+                            tmpData.append(amphoe)
+                            
+                        }
                         
                     }
                     
                     print(tmpData)
-//                    amphoeJson = JSON.init(tmpData)
-//                    
+                    districtJson = JSON.init(tmpData)
+//
 //                    amphoeTableView.reloadData()
                     
                 } else {
@@ -95,12 +96,31 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
                 let jsonObj = JSON(data: data)
                 
+                
                 if subDistrictJson != JSON.null {
-                    //    var tmpSubDistrictArray : Array<Any>!
-
-                    subDistrictJson = jsonObj["th"]["tambons"]
+                    
+                    let subDistrictArray = jsonObj["th"]["tambons"].arrayValue
+                    var tmpData : Array<Any> = []
+                    
+                    for subDistrict in subDistrictArray
+                    {
+                        print(subDistrict["amphoe_pid"])
+                        
+                        if (subDistrict["amphoe_pid"].stringValue == "1001")
+                        {
+                            
+                            tmpData.append(subDistrict)
+                            
+                        }
+                        
+                    }
+                    
+                    subDistrictJson = JSON.init(tmpData)
+                    
+                    
                     
                     print("jsonData:\(subDistrictJson)")
+
                 } else {
                     print("Could not get json from file, make sure that file contains valid json.")
                 }
