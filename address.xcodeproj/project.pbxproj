@@ -12,6 +12,9 @@
 		67D5F0551EBC263300AB2096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D5F0531EBC263300AB2096 /* Main.storyboard */; };
 		67D5F0571EBC263300AB2096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D5F0561EBC263300AB2096 /* Assets.xcassets */; };
 		67D5F05A1EBC263300AB2096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D5F0581EBC263300AB2096 /* LaunchScreen.storyboard */; };
+		67D5F0641EBC295700AB2096 /* changwats.json in Resources */ = {isa = PBXBuildFile; fileRef = 67D5F0611EBC295700AB2096 /* changwats.json */; };
+		67D5F0651EBC295700AB2096 /* amphoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 67D5F0621EBC295700AB2096 /* amphoes.json */; };
+		67D5F0661EBC295700AB2096 /* tambons.json in Resources */ = {isa = PBXBuildFile; fileRef = 67D5F0631EBC295700AB2096 /* tambons.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		67D5F0561EBC263300AB2096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67D5F0591EBC263300AB2096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67D5F05B1EBC263300AB2096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D5F0611EBC295700AB2096 /* changwats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = changwats.json; sourceTree = "<group>"; };
+		67D5F0621EBC295700AB2096 /* amphoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amphoes.json; sourceTree = "<group>"; };
+		67D5F0631EBC295700AB2096 /* tambons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tambons.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		67D5F04E1EBC263300AB2096 /* address */ = {
 			isa = PBXGroup;
 			children = (
+				67D5F0671EBC295A00AB2096 /* Address List */,
 				67D5F04F1EBC263300AB2096 /* AppDelegate.swift */,
 				67D5F0511EBC263300AB2096 /* ViewController.swift */,
 				67D5F0531EBC263300AB2096 /* Main.storyboard */,
@@ -62,6 +69,16 @@
 				67D5F05B1EBC263300AB2096 /* Info.plist */,
 			);
 			path = address;
+			sourceTree = "<group>";
+		};
+		67D5F0671EBC295A00AB2096 /* Address List */ = {
+			isa = PBXGroup;
+			children = (
+				67D5F0611EBC295700AB2096 /* changwats.json */,
+				67D5F0621EBC295700AB2096 /* amphoes.json */,
+				67D5F0631EBC295700AB2096 /* tambons.json */,
+			);
+			name = "Address List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +141,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D5F0651EBC295700AB2096 /* amphoes.json in Resources */,
 				67D5F05A1EBC263300AB2096 /* LaunchScreen.storyboard in Resources */,
+				67D5F0661EBC295700AB2096 /* tambons.json in Resources */,
 				67D5F0571EBC263300AB2096 /* Assets.xcassets in Resources */,
+				67D5F0641EBC295700AB2096 /* changwats.json in Resources */,
 				67D5F0551EBC263300AB2096 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
